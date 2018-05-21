@@ -1,1 +1,23 @@
 section { box-sizing: border-box; padding: 30px 0 } 
+@media all and ( max-width: 1200px ) {
+    .container { padding: 0 !important; width: 100% } 
+    .row { margin: auto !important } 
+}
+
+.video_sticky_content { background: #f2f2f2; position: relative } 
+.gif-cover { height: 100%; left: 0; position: absolute; top: 0; width: 100% } 
+.video_sticky[external=false] {  -webkit-box-shadow: 0 0 10px #333; box-shadow: 0 0 10px #333; height: 0; position: relative; padding-bottom: 56.25%; padding-top: 0px; overflow: hidden; -webkit-transition: ease-in-out 0.4s; transition: ease-in-out 0.4s; width: 100% } 
+.video_sticky[external=false] iframe, .video_sticky[external=false] object, .video_sticky[external=false] embed, .video_sticky[external=false] video { height: 100%; left: 0; position: absolute; top: 0; width: 100% } 
+
+.video_sticky[external=true] {  -webkit-box-shadow: 0 0 10px #333; box-shadow: 0 0 10px #333; height: 0; position: relative; padding-bottom: 56.25%; padding-top: 0px; overflow: hidden; -webkit-transition: ease-in-out 0.4s; transition: ease-in-out 0.4s; width: 100% } 
+.video_sticky[external=true] iframe, .video_sticky[external=true] object, .video_sticky[external=true] embed, .video_sticky[external=true] video { height: 100%; left: 0; position: absolute; top: 0; width: 100% } 
+
+
+.video_sticky.active { -webkit-box-shadow: none;box-shadow: none; min-height: 170px; left: 20px; padding-bottom: 0; position: fixed; top: 20px; width: 320px } 
+.video_sticky.active iframe, .video_sticky.active object, .video_sticky.active embed, .video_sticky.active video { height: auto } 
+@media all and ( max-width: 767px ) {
+    .video_sticky_content { background: none; } 
+    .video_sticky[external=false],.video_sticky[external=true] { -webkit-box-shadow: none;box-shadow: none; } 
+    .video_sticky.active { -webkit-box-shadow: none;box-shadow: none; min-height: auto; left: auto; padding-bottom: 56.25%; position: relative; top: auto; width: 100% } 
+    .video_sticky[external=false] iframe, .video_sticky[external=false] object, .video_sticky[external=false] embed, .video_sticky[external=false] video,.video_sticky.active iframe, .video_sticky.active object, .video_sticky.active embed, .video_sticky.active video { height: auto; left: auto; position: relative; top: auto; width: 100% } 
+}

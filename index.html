@@ -10,16 +10,26 @@
         <link rel="stylesheet" href="css/demo.css">
         
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        
+        <script src="https://player.vimeo.com/api/player.js"></script>
+        <script src="//fast.wistia.com/assets/external/E-v1.js" async></script>
 
-        <title>Dashboard - GSWEB</title>
+        <title>Sticky Videos - GSWEB</title>
     </head>
     <body>
         <section>
             <div class="container">
                 <div class="row center-xs">
-                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
-                        <div class="video_sticky">
-                            <video poster="img/gif_cover_video.gif" controls controlsList="nodownload" src="http://techslides.com/demos/sample-videos/small.mp4"></video>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-8">
+                        <div class="video_sticky" external="false" data-source="wistia">
+                            <!--BIGSTREAMIE-->
+                            <!--<video controlsList="nodownload" src="http://techslides.com/demos/sample-videos/small.mp4"></video>-->
+                            
+                            <!--WISTIA-->
+                            <script src="https://fast.wistia.com/embed/medias/ve7pzy0d3y.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><div class="wistia_responsive_padding" style="position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><div class="wistia_embed wistia_async_ve7pzy0d3y seo=false videoFoam=true" style="height:100%;width:100%">&nbsp;</div></div></div>
+                            
+                            <!--VIMEO-->
+                            <!--<iframe src="https://player.vimeo.com/video/56282283" width="640" height="480" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>-->
                         </div>
                     </div>
                 </div>
