@@ -17,7 +17,7 @@ $(document).ready(function(){
     
     if($featuredMedia.attr('data-source') == "wistia"){
         window._wq = window._wq || [];
-        _wq.push({ id: "ve7pzy0d3y", onReady: function(video) {
+        _wq.push({ id: "ID_WISTIA_VIDEO_HERE", onReady: function(video) {
             video.pause();
             $('img.gif-cover').click(function(){
                 $(this).hide();
