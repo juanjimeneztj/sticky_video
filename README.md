@@ -13,6 +13,7 @@ Include this scripts on the <head>
 ```
 Include this script before all content page:
 ```
+  <script src="video_sticky_gsweb.js"></script>
 ```
   
   Include this code to embed bigstreamie videos MP4 with the function StickyVideo
